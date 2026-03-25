@@ -1,0 +1,103 @@
+\documentclass{beamer}
+\usepackage[T2A]{fontenc}        
+\usepackage[utf8]{inputenc}   
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multirow} 
+\title{Презентация на LaTex}
+\author{Гаджиева Сара Фазиль кызы}
+\date{\today}
+\usetheme{CambridgeUS}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Формулы}
+\begin{frame}{Формулы}
+Деление комплексных чисел путём умножения на сопряжённое число.
+\begin{equation}
+\frac{a+bi}{c+di}=\frac{a+bi}{c+di}\cdot\frac{c-di}{c-di}=\frac{ac+bd}{c^2+d^2}+\left(\frac{bc-ad}{c^2+d^2}\right)i
+\end{equation}
+
+Интеграл функции, содержащей квадратный корень.
+\begin{equation}
+\int \frac{du}{u\sqrt{a^2-u^2}}=-\frac{1}{a}\ln\left(\frac{a+\sqrt{a^2-u^2}}{u}\right)
+\end{equation}
+
+Производные тригонометрических функций.
+\begin{equation}
+(\sin x)'=\cos x, \quad (\cos x)'=-\sin x, \quad (\tan x)'=\frac{1}{\cos^2 x}
+\end{equation}
+
+\end{frame}
+
+
+\section{Таблица}
+\begin{frame}{Таблица}
+\begin{table}[!h]
+\centering
+\caption{Таблица производных элементарных функций}
+\label{tab:1}
+\vspace{15pt}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Вид функции} & \textbf{Функция} & \textbf{Ее производная} \\
+\hline
+\multirow{3}{*}{Алгебраические} 
+& $x^n$ & $nx^{n-1}$ \\ \cline{2-3}
+& $\frac{1}{x}$ & $-\frac{1}{x^2}$ \\ \cline{2-3}
+& $\sqrt{x}$ & $\frac{1}{2\sqrt{x}}$ \\
+\hline
+\multirow{3}{*}{Показательные и логарифмические}
+& $e^x$ & $e^x$ \\ \cline{2-3}
+& $\ln x$ & $\frac{1}{x}$ \\ \cline{2-3}
+& $a^x$ & $a^x \ln a$ \\
+\hline
+\multirow{3}{*}{Тригонометрические}
+& $\sin x$ & $\cos x$ \\ \cline{2-3}
+& $\cos x$ & $-\sin x$ \\ \cline{2-3}
+& $\tan x$ & $\frac{1}{\cos^2 x}$ \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\section{Списки}
+\begin{frame}{Ненумерованный список}
+Свойства определенного интеграла
+\begin{itemize}
+\item линейность:
+$\int_a^b (c_1 f+c_2 g) dx=c_1 \int_a^b f dx+c_2 \int_a^b g dx;$
+\item аддитивность:
+$\int_a^b f dx=\int_a^c f dx+\int_c^b f dx;$
+\item интеграл от константы:
+$\int_a^b C dx=C(b-a);$
+\item свойство монотонности.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Нумерованный список}
+Основные этапы исследования функции:
+\begin{enumerate}
+\item Нахождение области определения функции 
+\item Исследование функции на четность/нечетность	
+\item Поиск точек пересечения с осями координат
+\item Нахождение производной функции и критических точек
+\item Построение графика функции
+\end{enumerate}
+\end{frame}
+
+\section{Список}
+\begin{frame}{Список литературы}
+\begin{thebibliography}{9}
+\bibitem{art1} Mathematical Handbook of Formulas and Tables (Third Edition) 
+\bibitem{art2} Standard Mathematical tables and formulae (31st edition) - Daniel Zwillinger
+\bibitem{art3} Handbook of Mathematical Functions - Abramowitz \& Stegun
+\end{thebibliography}
+\end{frame}
+
+\end{document}
