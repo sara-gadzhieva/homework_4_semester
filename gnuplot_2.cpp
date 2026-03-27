@@ -14,6 +14,6 @@ int main() {
       <<"	splot x**2-y**2 with pm3d"<<endl
       <<"	pause 0.01"<<endl
       <<"}"<<endl;
-    system("gnuplot plot.gp");
+    system("gnuplot gnuplot2.gp");
     return 0;
 	}
